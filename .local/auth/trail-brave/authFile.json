@@ -1,0 +1,19 @@
+{
+  "status": 0,
+  "result": {
+    "id": "00Dd2000004xnyTEAQ",
+    "apiVersion": "62.0",
+    "accessToken": "00Dd2000004xnyT!AQEAQDn5IZ0vlB1IWQgKyGm9Vd0ODulXMGfhse2skzDBT6unS5HocpoxiruZDualkcwKKb1vdg.ox3rRcJuMQDDeeHyMz6P8",
+    "instanceUrl": "https://brave-otter-blgwfy-dev-ed.trailblaze.my.salesforce.com",
+    "username": "david.jurado@brave-otter-blgwfy.com",
+    "clientId": "PlatformCLI",
+    "connectedStatus": "Connected",
+    "sfdxAuthUrl": "force://PlatformCLI::5Aep861Jfo34KnkW6Llf9o8RYjG6Lt4D_m25WxICst8roBPhwE0PoF7Ysgzi_tHLxI00e4rC9vj.sQJ4BPNEv_G@brave-otter-blgwfy-dev-ed.trailblaze.my.salesforce.com",
+    "alias": "trail-brave"
+  },
+  "warnings": [
+    "The \"force org display\" command has been deprecated. Use \"org display\" instead.",
+    "The \"-u\" flag has been deprecated. Use \"--target-org | -o\" instead.",
+    "This command will expose sensitive information that allows for subsequent activity using your current authenticated session.\nSharing this information is equivalent to logging someone in under the current credential, resulting in unintended access and escalation of privilege.\nFor additional information, please review the authorization section of the https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_auth_web_flow.htm."
+  ]
+}
