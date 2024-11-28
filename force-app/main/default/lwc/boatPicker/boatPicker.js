@@ -11,10 +11,23 @@ const BOAT_FIELDS = [BOAT_PICTURE_FIELD, BOAT_NAME_FIELD,BOAT_OWNER_FIELD, BOAT_
 
 export default class Boats extends LightningElement {
     
-    
+    displayInfo = {
+        primaryField: 'Name',
+        additionalFields: ['BoatType__r.Name'],
+    };
+
+    matchingInfo = {
+        primaryField: { fieldPath: 'Name', mode: 'startsWith' },
+        additionalFields: [{ fieldPath: 'BoatType__r.Name' }],
+    };
+
     boatId;
     get showBoat() {
         return this.boatId != null;
+    }
+
+    handleChange(event) {
+        this.boatId = event.detail.recordId;
     }
 
     @wire(getRecord, { recordId: '$boatId', fields: BOAT_FIELDS  })

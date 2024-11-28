@@ -5,7 +5,10 @@
                 <lightning-record-picker
                     label="Browse our inventory"
                     placeholder="Search by boat name or type"
-                    object-api-name="Boat__c" >
+                    object-api-name="Boat__c"
+                    display-info={displayInfo}
+                    matching-info={matchingInfo}
+                    onchange={handleChange} >
                 </lightning-record-picker>
             </div>
             <div lwc:if={showBoat}>
